@@ -1,0 +1,36 @@
+<mainnav></mainnav>
+<div class="container">
+    <div class="row">
+        <h4 class="graphHeading">Summary</h4>
+        <div class="col-md-6">
+             <canvas id="chartContainerOne" width="250" height="150"></canvas>
+        </div>
+        <div class="col-md-6">
+            <canvas id="chartContainerTwo" width="250" height="150"></canvas>
+        </div>
+    </div>
+</div>
+<div class="container">
+  <div class="row topicsListWrapper">
+    <div class="col-md-12 sectionOne">
+        <h4>What's New</h4>
+        <div class="forumInfo" ng-repeat="item in vm.foruminfo">
+            <a ui-sref="topic-details">{{item.title}}</a>
+            <h5>{{item.desc}}</h5>
+            <p><span>Posted by - </span> <span class="author"> {{item.postedby}}</span> ,{{item.date}} </p>
+        </div>
+    </div>
+    <!-- <div class="col-md-4">
+        <div class="panel panel-default sectionTwo">
+            <h4>Popular Topics</h4>
+            <div class="topicInfo" ng-repeat="item in vm.topicinfo">
+                <a ui-sref="topic-details">{{item.title}} </a>
+                <h5>{{item.desc}}</h5>
+                <p><span>Posted by - </span> <span class="author"> {{item.postedby}}</span> , {{item.date}}</p>
+                <p></p>
+            </div>
+        </div>
+    </div> -->
+</div>  
+</div>
+
