@@ -15,7 +15,6 @@
         var service = {
             postTopic: postTopic,
             getForumInfo: getForumInfo,
-            getPopularTopic: getPopularTopic,
             getHighlightedTopic: getHighlightedTopic,
             getUserComments:getUserComments,
             postComment:postComment
@@ -53,22 +52,6 @@
             }).then(getHighlightedTopicComplete);
 
             function getHighlightedTopicComplete(data) {
-                console.log(data);
-                return data;
-            }
-
-        }
-        function getPopularTopic(data) {
-            return $http({
-                method: 'GET',
-                data: JSON.stringify(data),
-                url: 'http://demo1928573.mockable.io/populartopic',
-                headers: {
-                    'Content-Type': 'application/json',
-                }
-            }).then(getPopularTopicComplete);
-
-            function getPopularTopicComplete(data) {
                 console.log(data);
                 return data;
             }

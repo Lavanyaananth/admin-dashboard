@@ -18,25 +18,20 @@
                 console.log(data.data);
             }
         });
-        dataservice.getPopularTopic().then(function(data) {
-            if (data) {
-                vm.topicinfo = data.data;
-                console.log(data.data);
-            }
-        });
+
 
         var options = {
             type: 'line',
             data: {
                 labels: ["Sun", "Mon", "Tue","Wed","Thu","Fri","Sat"],
                 datasets: [{
-                    label: '# of threads',
+                    label: '# of topics',
                     data: [10,7,8,4,3,12,6],
-                    backgroundColor:"rgba(131, 156, 178, 1)",
+                    backgroundColor:"rgba(61, 84, 118, 1)",
                     strokeColor: "brown",
                     borderWidth: 2
                 }, {
-                    label: '# of users',
+                    label: '# of new users',
                     data: [7, 10, 5,8,11,15,7],
                     backgroundColor: "rgba(205, 235, 254, 1)",
                     strokeColor: "brown",
@@ -59,13 +54,13 @@
             data: {
                 labels: ["Sun", "Mon", "Tue","Wed","Thu","Fri","Sat"],
                 datasets: [{
-                    label: '# of threads answered',
+                    label: '# of new topics',
                     data: [9,2,5,11,16,4,8],
-                    backgroundColor:"rgba(131, 156, 178, 1)",
+                    backgroundColor:"rgba(61, 84, 118, 1)",
                     strokeColor: "brown",
                     borderWidth: 2
                 }, {
-                    label: '# of users',
+                    label: '# of avg comments per topic',
                     data: [5,9,2,11,6,7,16],
                     backgroundColor: "rgba(205, 235, 254, 1)",
                     strokeColor: "brown",

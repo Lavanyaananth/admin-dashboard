@@ -22,7 +22,7 @@
                         text: "Topic has been created successfully",
                         type: "success",
                         showCancelButton: false,
-                        confirmButtonColor: "#f16f30",
+                        confirmButtonColor: "#839CB2",
                         confirmButtonText: "Close",
                         closeOnConfirm: true
                     }, function() {

@@ -1,10 +1,11 @@
 /* Header */
-.navbar{
+
+.navbar {
     background-color: #fff;
-        padding-bottom: 10px;
+    padding-bottom: 10px;
     padding-top: 10px;
-     
 }
+
 .navbar .navbar-default .navbar-right {
     padding: 10px 20px;
     li {
@@ -14,11 +15,14 @@
         }
     }
 }
-.navbar-brand{
+
+.navbar-brand {
     padding-top: 0;
 }
+
 .logo {
-    width: 200px;
+    width: 40px;
+    margin: 2px 30px;
 }
 
 
@@ -123,11 +127,17 @@
     background-color: $white-color;
     padding-top: 20px;
     padding-left: 30px;
-    &:focus{
+    &:focus {
         outline: none;
     }
 }
-.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
     outline: none;
     box-shadow: none;
 }
@@ -146,12 +156,15 @@
             font-size: 16px;
             font-weight: 400;
             cursor: pointer;
+            color: $title-color;
+        }
+        a:hover{
             color: $primary-color;
         }
         h5 {
             font-size: 14px;
             font-weight: 100;
-            color: $text-color;
+            color: $title-color;
             line-height: 20px;
         }
         span {
@@ -164,9 +177,8 @@
             font-size: 12px;
             font-weight: 400;
             text-transform: capitalize;
-
         }
-        .author{
+        .author {
             color: $text-color;
             font-size: 12px;
             font-weight: 600;
@@ -189,12 +201,15 @@
             font-size: 16px;
             font-weight: 400;
             cursor: pointer;
+            color: $title-color;
+        }
+        a:hover {
             color: $primary-color;
         }
         h5 {
             font-size: 14px;
             font-weight: 100;
-            color: $text-color;
+            color: $title-color;
             line-height: 30px;
         }
         span {
@@ -208,7 +223,7 @@
             font-weight: 400;
             text-transform: capitalize;
         }
-        .author{
+        .author {
             color: $text-color;
             font-size: 12px;
             font-weight: 600;
@@ -216,45 +231,7 @@
         }
         .forumInfo {
             margin-bottom: 20px;
-        }
-    }
-    .sectionTwo {
-        padding: 20px 20px;
-        box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-        border-color: #fff;
-        margin-top: 20px;
-        a {
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: 400;
-            cursor: pointer;
-            color: $primary-color;
-        }
-        h5 {
-            font-size: 14px;
-            font-weight: 100;
-            color: $text-color;
-            line-height: 20px;
-        }
-        span {
-            color: $text-color;
-            font-size: 12px;
-            font-weight: 100;
-        }
-        p {
-            color: $text-color;
-            font-size: 12px;
-            font-weight: 400;
-            text-transform: capitalize;
-        }
-        .author{
-            color: $text-color;
-            font-size: 12px;
-            font-weight: 600;
-            text-transform: capitalize;
-        }
-        .topicInfo {
-            margin-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
         }
     }
 }
@@ -301,7 +278,7 @@
         }
         .media-body {
             h5 {
-                color: $primary-color;
+                color: $title-color;
                 font-size: 16px;
                 font-weight: 400;
             }
@@ -389,7 +366,7 @@
         }
         .media-body {
             h5 {
-                color: $primary-color;
+                color: $title-color;
                 font-size: 16px;
                 font-weight: 400;
             }
@@ -409,11 +386,16 @@
         }
     }
 }
-canvas { background-color : #fff;
+
+canvas {
+    background-color: #fff;
 }
-#chartContainerOne, #chartContainerTwo{
+
+#chartContainerOne,
+#chartContainerTwo {
     margin: 20px;
 }
-.graphHeading{
+
+.graphHeading {
     margin: 20px;
 }

@@ -20,7 +20,8 @@ body {
   padding-top: 0; }
 
 .logo {
-  width: 200px; }
+  width: 40px;
+  margin: 2px 30px; }
 
 /*Create topic btn */
 .createTopic {
@@ -110,7 +111,12 @@ body {
   .cancelAction:focus {
     outline: none; }
 
-.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
   outline: none;
   box-shadow: none; }
 
@@ -126,23 +132,25 @@ body {
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
+    color: #333; }
+  .newTopicWrapper .sectionTwo a:hover {
     color: #839CB2; }
   .newTopicWrapper .sectionTwo h5 {
     font-size: 14px;
     font-weight: 100;
-    color: #757575;
+    color: #333;
     line-height: 20px; }
   .newTopicWrapper .sectionTwo span {
-    color: #757575;
+    color: #666;
     font-size: 12px;
     font-weight: 100; }
   .newTopicWrapper .sectionTwo p {
-    color: #757575;
+    color: #666;
     font-size: 12px;
     font-weight: 400;
     text-transform: capitalize; }
   .newTopicWrapper .sectionTwo .author {
-    color: #757575;
+    color: #666;
     font-size: 12px;
     font-weight: 600;
     text-transform: capitalize; }
@@ -157,67 +165,38 @@ body {
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
+    color: #333; }
+  .topicsListWrapper .sectionOne a:hover {
     color: #839CB2; }
   .topicsListWrapper .sectionOne h5 {
     font-size: 14px;
     font-weight: 100;
-    color: #757575;
+    color: #333;
     line-height: 30px; }
   .topicsListWrapper .sectionOne span {
-    color: #757575;
+    color: #666;
     font-size: 12px;
     font-weight: 100; }
   .topicsListWrapper .sectionOne p {
-    color: #757575;
+    color: #666;
     font-size: 12px;
     font-weight: 400;
     text-transform: capitalize; }
   .topicsListWrapper .sectionOne .author {
-    color: #757575;
+    color: #666;
     font-size: 12px;
     font-weight: 600;
     text-transform: capitalize; }
   .topicsListWrapper .sectionOne .forumInfo {
-    margin-bottom: 20px; }
-  .topicsListWrapper .sectionTwo {
-    padding: 20px 20px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-    border-color: #fff;
-    margin-top: 20px; }
-    .topicsListWrapper .sectionTwo a {
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 400;
-      cursor: pointer;
-      color: #839CB2; }
-    .topicsListWrapper .sectionTwo h5 {
-      font-size: 14px;
-      font-weight: 100;
-      color: #757575;
-      line-height: 20px; }
-    .topicsListWrapper .sectionTwo span {
-      color: #757575;
-      font-size: 12px;
-      font-weight: 100; }
-    .topicsListWrapper .sectionTwo p {
-      color: #757575;
-      font-size: 12px;
-      font-weight: 400;
-      text-transform: capitalize; }
-    .topicsListWrapper .sectionTwo .author {
-      color: #757575;
-      font-size: 12px;
-      font-weight: 600;
-      text-transform: capitalize; }
-    .topicsListWrapper .sectionTwo .topicInfo {
-      margin-bottom: 20px; }
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0; }
 
 /* detail page*/
 .detailWrapper .subnav {
   background-color: #fff; }
   .detailWrapper .subnav li a {
     text-decoration: none;
-    color: #757575; }
+    color: #666; }
     .detailWrapper .subnav li a:hover {
       color: #839CB2; }
 
@@ -233,18 +212,18 @@ body {
     display: inline-block;
     margin-right: 5px; }
   .detailWrapper .infoWrapper .sectionOne .commentSection {
-    color: #757575;
+    color: #666;
     margin-left: 20px;
     cursor: pointer; }
   .detailWrapper .infoWrapper .sectionOne .heartIt {
-    color: #757575;
+    color: #666;
     cursor: pointer; }
   .detailWrapper .infoWrapper .media-body h5 {
-    color: #839CB2;
+    color: #333;
     font-size: 16px;
     font-weight: 400; }
   .detailWrapper .infoWrapper .media-body p {
-    color: #757575;
+    color: #666;
     font-size: 12px;
     font-weight: 400;
     text-transform: capitalize; }
@@ -313,11 +292,11 @@ body {
     padding: 15px 0px;
     border-bottom: 1px solid #ddd; }
   .detailWrapper .commentWrapper .media-body h5 {
-    color: #839CB2;
+    color: #333;
     font-size: 16px;
     font-weight: 400; }
   .detailWrapper .commentWrapper .media-body p {
-    color: #757575;
+    color: #666;
     font-size: 12px;
     font-weight: 400;
     text-transform: capitalize; }
@@ -331,7 +310,8 @@ body {
 canvas {
   background-color: #fff; }
 
-#chartContainerOne, #chartContainerTwo {
+#chartContainerOne,
+#chartContainerTwo {
   margin: 20px; }
 
 .graphHeading {
